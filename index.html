@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fique Mais Forte a Cada Dia</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#0a0a0a;color:#fff}
+header{background:linear-gradient(135deg,#000,#7f1d1d,#dc2626);padding:60px 20px;text-align:center}
+nav{background:#000;padding:14px;text-align:center;border-bottom:2px solid #991b1b}
+nav a{color:#fff;text-decoration:none;margin:0 12px;font-weight:bold}
+.hero-btn,.buy{background:#dc2626;color:#fff;padding:12px 22px;border:none;border-radius:10px;text-decoration:none;font-weight:bold;cursor:pointer}
+.container{max-width:1100px;margin:auto;padding:30px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#151515;border:1px solid #7f1d1d;border-radius:16px;padding:20px}
+.price{color:#ef4444;font-size:28px;font-weight:700}
+footer{text-align:center;color:#aaa;padding:30px;border-top:1px solid #333}
+.modal{display:none;position:fixed;inset:0;background:#0009;align-items:center;justify-content:center}
+.box{background:#111;padding:24px;border-radius:16px;border:1px solid #991b1b;max-width:360px;width:90%}
+input{width:100%;padding:10px;margin:8px 0;border-radius:8px;border:1px solid #555;background:#000;color:#fff}
+</style>
+</head>
+<body>
+<header>
+<h1>FIQUE MAIS FORTE A CADA DIA</h1>
+<p>Venda seus cursos online e ajude pessoas a evoluírem.</p>
+<a class="hero-btn" href="#cursos">Ver cursos</a>
+</header>
+<nav>
+<a href="#cursos">Cursos</a>
+<a href="#sobre">Sobre</a>
+<a href="#contato">Contato</a>
+</nav>
+<div class="container">
+<section id="cursos">
+<h2>Cursos</h2>
+<div class="grid">
+<div class="card"><h3>Treino em Casa</h3><p>30 dias de treino.</p><div class="price">R$49,90</div><button class="buy" onclick="buy('Treino em Casa','49,90')">Comprar</button></div>
+<div class="card"><h3>Hipertrofia</h3><p>Método completo.</p><div class="price">R$97,00</div><button class="buy" onclick="buy('Hipertrofia','97,00')">Comprar</button></div>
+<div class="card"><h3>Nutrição</h3><p>Ganho de massa.</p><div class="price">R$67,00</div><button class="buy" onclick="buy('Nutrição','67,00')">Comprar</button></div>
+</div>
+</section>
+<section id="sobre"><h2>Sobre</h2><p>Site oficial Fique Mais Forte a Cada Dia.</p></section>
+<section id="contato"><h2>Contato</h2><input placeholder="Seu nome"><input placeholder="Seu e-mail"><button class="hero-btn">Enviar</button></section>
+</div>
+<div id="m" class="modal"><div class="box"><h3>Pagamento Pix</h3><p id="c"></p><h2 id="v"></h2><p>Cadastre sua chave Pix aqui depois.</p><input placeholder="Sua chave Pix"><button class="hero-btn" onclick="closeM()">Fechar</button></div></div>
+<footer>© 2026 Fique Mais Forte a Cada Dia</footer>
+<script>
+function buy(n,p){c.textContent=n;v.textContent='R$ '+p;m.style.display='flex';}
+function closeM(){m.style.display='none';}
+</script>
+</body>
+</html>
