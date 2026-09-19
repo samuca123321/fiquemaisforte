@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fique Mais Forte a Cada Dia</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>FIQUE MAIS FORTE</h1><nav><a href="#cursos">Cursos</a><a href="#aluno">Aluno</a></nav></header>
+<section class="hero"><div><h2>Plataforma Premium</h2><p>4 cursos • 20 aulas • R$23,90</p></div></section>
+<main id="cursos" class="grid"></main>
+<div id="pix" class="hidden modal"><div class="box"><h2>Pagamento Pix</h2><p id="curso"></p><div class="qr">SEU QR NG.CASH</div><div class="key">82 99350-3710</div><button onclick="copyPix()">Copiar Chave</button><button onclick="unlock()">Já paguei</button></div></div>
+<div id="aluno" class="hidden modal"><div class="box"><h2 id="titulo"></h2><div id="aulas"></div><button onclick="closeAll()">Fechar</button></div></div>
+<script src="script.js"></script></body></html>
